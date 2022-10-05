@@ -1,0 +1,62 @@
+name:                research-quickcheck
+version:             0.1.0.0
+github:              "isovector/research-quickcheck"
+license:             BSD3
+author:              "Sandy Maguire"
+maintainer:          "sandy@sandymaguire.me"
+copyright:           "Sandy Maguire"
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/isovector/research-quickcheck#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- QuickCheck
+- checkers
+- lens
+- silently
+
+default-extensions:
+- BangPatterns
+- DeriveAnyClass
+- DeriveGeneric
+- DerivingStrategies
+- DerivingVia
+- FlexibleContexts
+- FlexibleInstances
+- GADTs
+- ImplicitPrelude
+- LambdaCase
+- MonomorphismRestriction
+- OverloadedStrings
+- ScopedTypeVariables
+- StandaloneDeriving
+- StrictData
+- TupleSections
+- TypeApplications
+- TypeFamilies
+- TypeSynonymInstances
+- ViewPatterns
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src
+
